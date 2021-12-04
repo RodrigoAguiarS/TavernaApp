@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "729962107504",
+    "project_id": "taverna-eaba1",
+    "storage_bucket": "taverna-eaba1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729962107504:android:277dd292b642cf8dbb9ab5",
+        "android_client_info": {
+          "package_name": "br.com.rodrigo.tavernaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729962107504-cp02v45tgl9gkjjjs26qau2r1fjh68nk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpocaSllWpFUYULnalI_ROzJi9Jy78Ysc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729962107504-cp02v45tgl9gkjjjs26qau2r1fjh68nk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
