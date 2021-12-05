@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import br.com.rodrigo.tavernaapp.R;
 import br.com.rodrigo.tavernaapp.helper.ConfiguracaoFirebase;
 
-public class MainActivity extends AppCompatActivity {
+public class CadastroActivity extends AppCompatActivity {
 
     private Button botaoAcessar;
     private EditText campoEmail, campoSenha;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_cadastro);
 
         inicializaComponentes();
         autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if( task.isSuccessful() ){
 
-                                        Toast.makeText(MainActivity.this,
+                                        Toast.makeText(CadastroActivity.this,
                                                 "Cadastro realizado com sucesso!",
                                                 Toast.LENGTH_SHORT).show();
 
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                                             e.printStackTrace();
                                         }
 
-                                        Toast.makeText(MainActivity.this,
+                                        Toast.makeText(CadastroActivity.this,
                                                 "Erro: " + erroExcecao ,
                                                 Toast.LENGTH_SHORT).show();
                                     }
@@ -97,12 +97,12 @@ public class MainActivity extends AppCompatActivity {
 
                                     if( task.isSuccessful() ){
 
-                                        Toast.makeText(MainActivity.this,
+                                        Toast.makeText(CadastroActivity.this,
                                                 "Logado com sucesso",
                                                 Toast.LENGTH_SHORT).show();
 
                                     }else {
-                                        Toast.makeText(MainActivity.this,
+                                        Toast.makeText(CadastroActivity.this,
                                                 "Erro ao fazer login : " + task.getException() ,
                                                 Toast.LENGTH_SHORT).show();
                                     }
@@ -113,12 +113,12 @@ public class MainActivity extends AppCompatActivity {
                         }
 
                     }else {
-                        Toast.makeText(MainActivity.this,
+                        Toast.makeText(CadastroActivity.this,
                                 "Preencha a senha!",
                                 Toast.LENGTH_SHORT).show();
                     }
                 }else {
-                    Toast.makeText(MainActivity.this,
+                    Toast.makeText(CadastroActivity.this,
                             "Preencha o E-mail!",
                             Toast.LENGTH_SHORT).show();
                 }
