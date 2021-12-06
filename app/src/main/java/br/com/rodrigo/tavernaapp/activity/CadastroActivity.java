@@ -3,6 +3,7 @@ package br.com.rodrigo.tavernaapp.activity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -100,6 +101,7 @@ public class CadastroActivity extends AppCompatActivity {
                                         Toast.makeText(CadastroActivity.this,
                                                 "Logado com sucesso",
                                                 Toast.LENGTH_SHORT).show();
+                                        startActivity(new Intent(getApplicationContext(), AnunciosActivity.class));
 
                                     }else {
                                         Toast.makeText(CadastroActivity.this,
